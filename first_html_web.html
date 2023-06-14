@@ -15,17 +15,43 @@
             color:red; 
             text-decoration: underline
         }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 3px solid #000;
+            padding: 20px;
+            margin: 0;
+        }
+        ol {
+            border-right: 3px solid #000;
+            width: 100px;
+            margin:0;
+            padding: 20px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol {
+            padding-left: 33px;
+        }
+        #grid #article {
+            padding-left: 25px;
+        }
     </style>
 </head>
 <body>
-    <h1><a href="first_html_web.html"
-        id="active">WEB</a></h1>
+    <h1><a href="first_html_web.html" id="active">WEB</a></h1>
+    <div id="grid">
     <ol>
         <li><a href="first_html.html">HTML</a></li>
         <li><a href="first_html_css.html">CSS</a></li>
         <li><a href="first_html_js.html">JavaScript</a></li>
     </ol>
+    <div id="article">
     <h2>WEB</h2>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/WWW-LetShare.svg/330px-WWW-LetShare.svg.png" alt="WWW">
     <p><strong>World Wide Web (abbreviated WWW or the Web)</strong> is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+</div>
+</div>
 </body>
